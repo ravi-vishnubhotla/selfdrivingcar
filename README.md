@@ -23,7 +23,18 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of following steps. 
+1. Converted the images to grayscale
+2. Blurr this gray image to smoothen unwanted edges.
+3. Detect edges using cv2.canny() function. This detects all edges including many unwanted ones
+4. Create a mask with same dimensions as canny_image to crop lanes only in the canny image
+5. Define vertices of polygon which is of similar shape to lanes we want to analyse
+6. Draw polygon on these vertices using cv2.fillPoly function
+7. Use bitwise_and function and apply mask to the image. Now we have image where only lane edges are showing. 
+8. We want to extract full line from these partial lane lines
+9. Use HoughLinesP functon and extract line cordinates from masked image for both left and right lanes
+10. Draw lines on the image using cv2.line and passing cordinates to this function
+
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
