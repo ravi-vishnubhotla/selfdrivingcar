@@ -43,16 +43,14 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ![alt text][image1]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings with your current pipeline
 
+1. This code is good for straight lanes. But as soon as the lane curves, we need better algorithms to deal with this
+2. Also we are dealing in gray scale. So, code will not know if there are yellow lines
+3. Hardcoding cordinate values
 
-One potential shortcoming would be what would happen when ... 
+### 3. Possible improvements to your pipeline
 
-Another shortcoming could be ...
-
-
-### 3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+1. Fit to polynomial curves instead of straight lines
+2. Use HSL to deal with yellow lines
+3. Ability to customize canny function to get better gradients in different driving conditions
