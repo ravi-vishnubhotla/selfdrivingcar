@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
-[image2]: examples/grayscale.jpg "Grayscale"
+[image2]: (https://github.com/rkv7/selfdrivingcar/blob/main/examples/grayscale.jpg)
 ---
 
 ### Reflection
