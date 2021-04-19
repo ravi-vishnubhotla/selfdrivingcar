@@ -37,7 +37,7 @@ My pipeline consisted of following steps.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+See below gray scale image. This is dispplayed using plt.imshow(). If you want to see an actual gray scale image use cv2.imshow instead
 
 ![alt text][image1]
 
