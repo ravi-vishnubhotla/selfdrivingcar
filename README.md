@@ -18,9 +18,7 @@ The goals / steps of this project are the following:
 [image2]: (https://github.com/rkv7/selfdrivingcar/blob/main/examples/grayscale.jpg)
 ---
 
-### Reflection
-
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. PipeLine description
 
 My pipeline consisted of following steps. 
 1. Converted the images to grayscale
@@ -34,21 +32,18 @@ My pipeline consisted of following steps.
 9. Use HoughLinesP functon and extract line cordinates from masked image for both left and right lanes
 10. Draw lines on the image using cv2.line and passing cordinates to this function
 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
 See below gray scale image. This is dispplayed using plt.imshow(). If you want to see an actual gray scale image use cv2.imshow instead
 
 ![alt text][image1]
 
 
-### 2. Potential shortcomings with your current pipeline
+### 2. Potential shortcomings with current pipeline
 
 1. This code is good for straight lanes. But as soon as the lane curves, we need better algorithms to deal with this
 2. Also we are dealing in gray scale. So, code will not know if there are yellow lines
 3. Hardcoding cordinate values
 
-### 3. Possible improvements to your pipeline
+### 3. Possible improvements to pipeline
 
 1. Fit to polynomial curves instead of straight lines
 2. Use HSL to deal with yellow lines
